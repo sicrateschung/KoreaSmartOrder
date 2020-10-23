@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+
+    "Username":"Username",
+    "Password":"Password",
+    "businessUnit":"P830",
+    "company":"00222",
+    
+    "BSSV_TAIWAN_URL":"https://101.78.160.233:9121/PY920/SalesOrderManager?WSDL",
+    "BSSV_KOREA_URL":"https://101.78.160.233:9171/PY920/SalesOrderManager?WSDL"
+
+
+  }
+}
