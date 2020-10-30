@@ -219,6 +219,47 @@ namespace korea.octopus
                 this.processSalesOrderField = value;
             }
         }
+
+        private getSalesOrder getSalesOrderField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://oracle.e1.bssv.JP420000/")]
+        public getSalesOrder getSalesOrder
+        {
+            get
+            {
+                return this.getSalesOrderField;
+            }
+            set
+            {
+                this.getSalesOrderField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://oracle.e1.bssv.JP420000/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://oracle.e1.bssv.JP420000/", IsNullable = false)]
+    public partial class getSalesOrder
+    {
+
+        private header headerField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "")]
+        public header header
+        {
+            get
+            {
+                return this.headerField;
+            }
+            set
+            {
+                this.headerField = value;
+            }
+        }
     }
 
     /// <remarks/>
@@ -276,6 +317,8 @@ namespace korea.octopus
 
         private headerDetail[] detailField;
 
+        private headerSalesOrderKey salesOrderKeyField;
+
         /// <remarks/>
         public headerProcessing processing
         {
@@ -325,6 +368,18 @@ namespace korea.octopus
             set
             {
                 this.customerPOField = value;
+            }
+        }
+
+        public headerSalesOrderKey salesOrderKey
+        {
+            get
+            {
+                return this.salesOrderKeyField;
+            }
+            set
+            {
+                this.salesOrderKeyField = value;
             }
         }
 
@@ -407,6 +462,7 @@ namespace korea.octopus
             }
         }
 
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("detail")]
         public headerDetail[] detail
@@ -421,6 +477,59 @@ namespace korea.octopus
             }
         }
     }
+
+                /// <remarks/>
+        [System.SerializableAttribute()]
+        [System.ComponentModel.DesignerCategoryAttribute("code")]
+        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        public partial class headerSalesOrderKey
+        {
+
+            private string documentCompanyField;
+
+            private string documentNumberField;
+            
+            private string documentTypeCodeField;
+
+            /// <remarks/>
+            public string documentCompany
+            {
+                get
+                {
+                    return this.documentCompanyField;
+                }
+                set
+                {
+                    this.documentCompanyField = value;
+                }
+            }
+
+            public string documentNumber
+            {
+                get
+                {
+                    return this.documentNumberField;
+                }
+                set
+                {
+                    this.documentNumberField = value;
+                }
+            }
+
+
+            /// <remarks/>
+            public string documentTypeCode
+            {
+                get
+                {
+                    return this.documentTypeCodeField;
+                }
+                set
+                {
+                    this.documentTypeCodeField = value;
+                }
+            }
+        }
 
     /// <remarks/>
     [System.SerializableAttribute()]
@@ -509,6 +618,7 @@ namespace korea.octopus
         private string addressLine2Field;
         private string addressLine3Field;
         private string addressLine4Field;
+        private string entityIdField;
 
         private headerShipToCustomer customerField;
 
@@ -566,6 +676,18 @@ namespace korea.octopus
             }
         }
 
+        public string entityId
+        {
+            get
+            {
+                return this.entityIdField;
+            }
+            set
+            {
+                this.entityIdField = value;
+            }
+        }
+        
         /// <remarks/>
         public headerShipToCustomer customer
         {
@@ -627,6 +749,8 @@ namespace korea.octopus
 
         private headerSoldToCustomer customerField;
 
+        private string entityIdField;
+
         /// <remarks/>
         public headerSoldToCustomer customer
         {
@@ -637,6 +761,18 @@ namespace korea.octopus
             set
             {
                 this.customerField = value;
+            }
+        }
+
+        public string entityId
+        {
+            get
+            {
+                return this.entityIdField;
+            }
+            set
+            {
+                this.entityIdField = value;
             }
         }
     }

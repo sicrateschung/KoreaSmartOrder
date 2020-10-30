@@ -42,7 +42,7 @@ namespace korea.octopus
 
                 if(response.StatusCode == (HttpStatusCode)200){
                     return new OkObjectResult(
-                    "{ Status:\"successed\""+
+                    "{ Status:\"successed\","+
                     "Reason:\"" + responseString+ "\""+
                     "}");
                 }
